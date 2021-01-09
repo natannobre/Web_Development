@@ -31,50 +31,85 @@
   <!-- CORPO DO SITE -->
   <div>
     <h2>Cadastro de Clientes</h2>
-
     <form>
-        <fieldset>
-            <legend>Informações Pessoais</legend>
-            <label>Nome: </label>
-            <input type="text"><br><br>
-            <label>Email: </label>
-            <input type="text"><br><br>
-            <label>Data de Nascimento: </label>
-            <input type="text">
-        </fieldset>
-    </form>
-    <br><br>
+      
+      <fieldset>
+          <legend>Informações Pessoais</legend>
 
-    <form>
-        <fieldset>
-            <legend>Informações Financeiras</legend>
-            <label>Saldo em Conta: </label>
-            <input type="text"><br><br>
-            <label>Crédito: </label>
-            <input type="text"><br><br>
-            <label>Salário Anual: </label>
-            <input type="text">
-        </fieldset>
-    </form>
-    <br><br>
+          <label>Nome: </label>
+          <input type="text"><br><br>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
 
-    <form>
-        <fieldset>
-            <legend>Endereço</legend>
-            <label>Estado: </label>
-            <input type="text"><br><br>
-            <label>Município: </label>
-            <input type="text"><br><br>
-            <label>Cidade: </label>
-            <input type="text"><br><br>
-            <label>Rua, número: </label>
-            <input type="text"><br><br>
-            <label>CEP: </label>
-            <input type="text">
-        </fieldset>
-    </form>
+          <label for="nasc">Data de Nascimento: </label>
+          <input type="date" id="nasc" name="nasc"><br><br>
 
-    
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone" pattern="9-[0-9]{4}-[0-9]{4}"><br><br>
+
+          <label>Sexo:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Masculino</label>
+          <input type="radio" id="female" name="gender" value="male">
+          <label for="female">Feminino</label><br>
+      </fieldset>
+      <br><br>
+
+      
+      <fieldset>
+          <legend>Informações Financeiras</legend>
+          <label>Saldo em Conta: </label>
+          <input type="text"><br><br>
+
+          <label>Crédito: </label>
+          <input type="text"><br><br>
+
+          <label>Salário Anual: </label>
+          <input type="text">
+      </fieldset>
+      <br><br>
+
+      
+      <fieldset>
+          <legend>Patrimônio</legend>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Carro">
+          <label for="vehicle1">Eu tenho um Carro</label><br>
+
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Moto">
+          <label for="vehicle2">Eu tenho uma Moto</label><br>
+
+          <input type="checkbox" id="eletro" name="eletro" value="Eletrodomestico">
+          <label for="eletro">Eu tenho pelo menos 3 Eletrodomésticos</label><br>
+
+          <input type="checkbox" id="casa" name="casa" value="casa">
+          <label for="casa">Eu possuo uma casa própria</label><br>
+      </fieldset>
+      <br><br>
+
+      
+      <fieldset>
+          <legend>Endereço</legend>
+          <label>Estado: </label>
+          <input type="text"><br><br>
+
+          <label>Município: </label>
+          <input type="text"><br><br>
+
+          <label>Cidade: </label>
+          <input type="text"><br><br>
+
+          <label>Rua, número: </label>
+          <input type="text"><br><br>
+
+          <label>CEP: </label>
+          <input type="text">
+      </fieldset>
+      <br><br>
+
+      <input type="submit" value="Submit"><br><br>
+
+    </form>
   <!-- RODAPÉ-->
   <div align="center">
     <hr>
