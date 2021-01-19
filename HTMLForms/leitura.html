@@ -16,12 +16,12 @@
 
   <!-- Menu -->
   <div>
-    <table cellpadding="10">
+    <table cellpadding="30">
       <tr>
-        <td> <a href="cadastro.html" tabindex='4'>Cadastro</a> </td>
-        <td> <a href="leitura.html" tabindex='2'>Leitura</a> </td>
-        <td> <a href="atualizacao.html" tabindex='1'>Atualização</a> </td>
-        <td> <a href="exclusao.html" tabindex='3'>Exclusão</a> </td>
+        <td rowspan="4"> <a href="cadastro.html" tabindex='4'> <img width="32" height="32" src="imgs/003-user-1.svg" alt="Cadastrar cliente"> Cadastro</a> </td>
+        <td> <a href="leitura.html" tabindex='2'> <img width="32" height="32" src="imgs/001-user.svg" alt="Leitura dos dados"> Leitura</a> </td>
+        <td> <a href="atualizacao.html" tabindex='1'> <img width="32" height="32" src="imgs/002-pencil.svg" alt="Editar cliente"> Atualização  </a> </td>
+        <td> <a href="exclusao.html" tabindex='3'><img width="32" height="32" src="imgs/004-cancel.svg" alt="Excluir dados"> Exclusão</a> </td>
       </tr>
     </table>
   </div>
@@ -30,10 +30,96 @@
 
   <!-- CORPO DO SITE -->
   <div>
-    <h2>Dados Pessoais</h2>
-    
-    
-  
+
+    <div align="center">
+      <h2><img width="50" height="50" src="imgs/001-user.svg" alt="Editar Cliente"> 
+        Leitura dos dados</h2>
+    </div>
+
+    <form method="POST" action="leitura.html">
+      
+      <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <label for="nome">Nome: </label>
+          <input disabled="true" type="text" name="nome" id="nome" value="Ruan Felipe de Almeida Silva"><br><br>
+          
+          <label for="email">Email:</label>
+          <input disabled="true" type="email" id="email" name="email" value="felipealmeida903@gmail.com"><br><br>
+
+          <label for="nascimento">Data de Nascimento: </label>
+          <input disabled="true" type="date" id="nascimento" name="nascimento" value="1999-12-07"><br><br>
+
+          <label for="telefone">Telefone:</label>
+          <input disabled="true" type="tel" id="telefone" name="telefone" pattern="9-[0-9]{4}-[0-9]{4}" value="9-8888-9999"><br><br>
+
+          <label for="cpf">CPF:</label>
+          <input disabled="true" type="text" maxlength="14" id="cpf" name="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" value="111.111.111-11"><br><br>
+
+          <label for="sexo">Sexo:</label>
+          <input disabled="true" type="radio" checked id="masculino" name="genero" value="masculino">
+          <label for="masculino">Masculino</label>
+          <input disabled="true" type="radio" id="feminino" name="genero" value="feminino">
+          <label for="feminino">Feminino</label><br>
+      </fieldset>
+      <br><br>
+
+      
+      <fieldset>
+          <legend>Informações Financeiras</legend>
+          <label for="saldo_atual">Saldo em Conta: R$</label>
+          <input disabled="true" type="number" min="0" step="0.01" value="1300.00" readonly><br><br>
+
+          <label>Crédito: R$</label>
+          <input disabled="true" type="number" min="0" step="0.01" value="20000.00" readonly><br><br>
+
+          <label>Salário Anual: R$ </label>
+          <input disabled="true" type="number" min="0" step="0.01" value="400000.00">
+      </fieldset>
+      <br><br>
+
+      
+      <fieldset>
+          <legend>Patrimônio</legend>
+          <input disabled="true" type="checkbox" id="carro" name="patrimonio1" value="Carro">
+          <label for="carro">Eu tenho um Carro</label><br>
+
+          <input disabled="true" type="checkbox" id="moto" name="patrimonio2" value="Moto" checked>
+          <label for="moto">Eu tenho uma Moto</label><br>
+
+          <input disabled="true" type="checkbox" id="eletro" name="patrimonio3" value="Eletrodomestico" checked>
+          <label for="eletro">Eu tenho pelo menos 3 Eletrodomésticos</label><br>
+
+          <input disabled="true" type="checkbox" id="casa" name="patrimonio4" value="casa" checked>
+          <label for="casa">Eu possuo uma casa própria</label><br>
+      </fieldset>
+      <br><br>
+
+      
+      <fieldset>
+          <legend>Endereço</legend>
+          <label for="estado">Estado: </label>
+          <input disabled="true" type="text" id="estado" name="estado" value="Ceará"><br><br>
+
+          <label for="cidade">Cidade: </label>
+          <input disabled="true" type="text" id="cidade" name="cidade" value="Quixeramobim"><br><br>
+
+          <label for="logradouro">Logradouro: </label>
+          <input disabled="true" type="text" id="logradouro" name="logradouro" value="Avenida da Vila">
+          <label for="numero">Nº: </label>
+          <input disabled="true" type="number" min="1" id="numero" name="numero" value="90"> <br><br>
+
+          <label>CEP: </label>
+          <input disabled="true" type="text" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" value="63800-000">
+      </fieldset>
+      <br><br>
+
+      <div align="center">
+        <input type="button" value="Voltar" disabled><br><br> 
+      </div>
+
+    </form>
+  </div>
   <!-- RODAPÉ-->
   <div align="center">
     <hr>
