@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" content="text/html">
+    <title>Formulário com HTML+CSS</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="corpo">
+        <div id="content">
+            <h1 align="center">Projeto adaptado - Des web</h1>
+            <span class="subtitulo" ><em align="center">Exemplo de formulário de pesquisa (Survey)</em></span>
+            <div id="form">
+                <form action="formulario.html" method="POST">
+                    <label for="nome">Nome</label> <br>
+                    <input type="text" placeholder="Coloque seu nome ..." name="nome" id="nome" required>
+                    <br> <br>
+                    <label for="email">Email </label> <br>
+                    <input type="email" placeholder="Coloque o seu email ..." name="email" id="email" required>
+                    <br> <br>
+                    <label for="idade">Idade <span>(opcional)</span> </label> <br>
+                    <input type="text" placeholder="Idade " name="idade" id="idade">
+                    <br> <br>
+                    <label for="ocupacao">Qual opção melhor descreve o seu estado atual? </label> <br>
+                    <select name="ocupacao" id="ocupacao" placeholder="Selecione a ocupação" required>
+                        <option value="" disabled selected >Selecione a ocupação</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="CLT">CLT</option>
+                        <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <br> <br>
+                    
+                    <label for="recomendacao">Você recomendaria este projeto? </label> <br>            
+                    <input type="radio" name="recomendacao" id="certeza" required> <label for="certeza" class="opcao">Com certeza! </label> <br>
+                    <input type="radio" name="recomendacao" id="talvez" required> <label for="talvez" class="opcao">Talvez </label> <br>
+                    <input type="radio" name="recomendacao" id="nao_sei" required> <label for="nao_sei" class="opcao">Não sei </label> <br>
+                    <br><br>
+
+                    <label for="melhorias">O que você gostaria de melhorar? <span>(Selecione quantos quiser)</span> </label> <br>
+                    <input type="checkbox" name="melhorias1" id="melhorias1"> <label class="opcao" for="melhorias1">Ter mais tempo para estudar</label> <br>
+                    <input type="checkbox" name="melhorias2" id="melhorias2"> <label class="opcao" for="melhorias2">Estudar mais o que gosto</label> <br>
+                    <input type="checkbox" name="melhorias3" id="melhorias3"> <label class="opcao" for="melhorias3">Gerência de projetos</label> <br>
+                    <input type="checkbox" name="melhorias4" id="melhorias4"> <label class="opcao" for="melhorias4">NodeJS</label> <br>
+                    
+                    <br><br>
+
+                    
+
+                    <label for="comentario">Algum comentário ou sugestão?</label> <br>
+                    <textarea name="comentario" id="comentario" cols="40" rows="5" placeholder="Insira seu comentário ou sugestão aqui ..."></textarea>
+                    <br><br>
+                    
+                    <input type="submit" value="Enviar">
+                   
+                </form>
+            </div>
+        </div>   
+    </div>
+    
+</body>
+</html>

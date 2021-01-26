@@ -1,0 +1,128 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#corpo {
+    background-image: url(desenvolvimento-de-software.jpg);
+    background-size: 100%;
+    min-height: 1080px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content {
+    padding: auto;
+    padding-top: 20px;
+    margin: auto;
+    width: 600px;
+    color: white;
+    padding-bottom: 200px;
+}
+
+#form {
+    margin-top: 30px;
+    background-color: darkblue;
+    padding: 0;
+    padding-bottom: 50px;
+    opacity: 0.9;
+}
+
+form {
+    margin: 0;
+    padding-top: 10%;
+}
+
+label {
+    margin: 10% 10% 0% 10%;
+    font-size: 20px;
+    color: white;
+}
+
+
+label.opcao {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    margin-left: 5px;    
+}
+
+input[type=text], input[type=email] {
+    margin: 1% 1% 1% 10%;
+    width: 475px;
+    height: 25px;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+
+}
+
+input[type=radio]{
+    margin: 2% 0% 1% 10%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+input[type=radio] + label.opcao{
+    display: inline;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    margin: 2% 0% 1% 10%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+input[type=checkbox] + label.opcao{
+    display: inline;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    margin: 1% 1% 7% 10%;
+    width: 483px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: mediumseagreen;
+    text-align: center;
+    border: 0px white;
+    cursor: pointer;
+}
+
+
+span.subtitulo {
+    padding-top: 2px;
+    padding-left: 25%;
+}
+
+span {
+    font-size: 16px;
+}
+
+
+
+select {
+    width: 483px;
+    height: 30px;
+    margin: 1% 1% 1% 10%;
+    font-size: 18px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+
+option:disabled{
+    color: darkgray;
+}
+
+textarea {
+    margin: 1% 1% 0% 10%;
+    font-size: 20px;
+    color: black;  
+    width: 477px;      
+}
