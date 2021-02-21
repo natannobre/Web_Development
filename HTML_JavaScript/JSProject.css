@@ -5,7 +5,7 @@
 
 body
 {
-    background-color: rgb(0, 204, 255);
+    background-color: #04a1bf;
 }
 
 #div_header
@@ -31,16 +31,21 @@ body
     margin-top: 5px;
 }
 
-#div_tarefa
+.div_tarefa
 {
     color: white;
     font-size: 25px;
     border: 3px solid rgba(5, 99, 122, 0.89);
     border-radius: 4px;
-    background-color: rgba(0, 238, 255, 0.404);
+    background-color: #4eb9cd;
     width: 1200px;
     padding-top: 10px;
     margin-bottom: 10px;
+}
+
+.div_tarefa.done
+{
+    background-color: #51df70;
 }
 
 h2
@@ -50,7 +55,7 @@ h2
 
 p.head1
 {
-    color: yellow;
+    color: #c1d234;
 }
 
 p.head2
@@ -63,7 +68,7 @@ p.head3
     color: rgb(2, 104, 2);
 }
 
-input[type=button].remover_tarefa
+.div_tarefa button
 {
     margin: 0% 1% 1% 1%;
     width: 35px;
@@ -94,10 +99,10 @@ input[type=button]
     width: 103px;
     height: 27px;
     font-size: 20px;
-    color: rgb(0, 204, 255);
+    color: #04a1bf;
     border-radius: 5px;
     border: 0px transparent;
-    background-color: rgba(5, 99, 122, 0.89);
+    background-color: #025f70;
 
 }
 

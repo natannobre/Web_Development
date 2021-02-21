@@ -9,32 +9,18 @@
 </head>
 
 <body>
-    <div id="div_header">
+    <header id="div_header">
         <h2 align="center">TAREFAS A FAZER (TO DO APP)</h2>
         <p align="center" class="head1">Adicione texto dentro da caixa de texto para inserir novas atividades</p>
         <p align="center" class="head2">Clique no item para marcar a atividade como completada</p>
         <p align="center" class="head3">Clique no "X" da atividade para remover o item</p>
 
-        <form action="JSProject.html">
-            <div id="div_form">
-                <input type="text" placeholder="Nova tarefa...">
-                <input type="button" value="Adicionar">
-            </div>
-        </form>
-    </div>
+        <div id="div_form">
+            <input type="text" id="input_insert" placeholder="Nova tarefa..." maxlength="53">
+            <input type="button" onclick="create()" value="Adicionar">
+        </div>        
+    </header>
     <div id="div_tarefas">
-        <div id="div_tarefa">
-            <label>Atividade 1</label>
-            <input type="button" class="remover_tarefa" value="X">
-        </div>
-        <div id="div_tarefa">
-            <label>Atividade 1</label>
-            <input type="button" class="remover_tarefa" value="X">
-        </div>
-        <div id="div_tarefa">
-            <label>Atividade 1</label>
-            <input type="button" class="remover_tarefa" value="X">
-        </div>
     </div>
 </body>
 
