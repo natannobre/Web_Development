@@ -43,7 +43,6 @@ function done(event)
     
     if (hasClass(event.target, "done"))
     {
-        console.log("0")
         event.target.classList.remove('done')
     }else{
         event.target.classList.add("done")
