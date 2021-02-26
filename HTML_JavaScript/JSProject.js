@@ -40,5 +40,17 @@ function create()
 
 function done(event)
 {
-    event.target.classList.add("done")
+    
+    if (hasClass(event.target, "done"))
+    {
+        console.log("0")
+        event.target.classList.remove('done')
+    }else{
+        event.target.classList.add("done")
+    }
+    
+}
+
+function hasClass(element, className) {
+    return element.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(element.className);
 }
