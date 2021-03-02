@@ -43,7 +43,7 @@ try
 }
 catch(error)
 {
-    fs.writeFileSync(path, JSON.stringify(listUsers))
+    fs.writeFileSync(pathUsers, JSON.stringify(listUsers))
 }
 
 try
@@ -97,7 +97,7 @@ app.post('/saveLogin', (req, res) => {
     }
     console.log(req.body.login, req.body.name)
     listUsers.push(user)
-    fs.writeFileSync('listUsers.txt', JSON.stringify(listUsers))
+    fs.writeFileSync(pathUsers, JSON.stringify(listUsers))
     // fs.appendFile('listUsers.txt', JSON.stringify(user), error => {if (error) console.log(error)})
     res.json(user)
 })
@@ -110,7 +110,7 @@ app.post('/tasks', (req, res) => {
     }
     console.log(req.body.name)
     listTasks.push(task)
-    fs.writeFileSync('listTasks.txt', JSON.stringify(listTasks))
+    fs.writeFileSync(pathTasks, JSON.stringify(listTasks))
     res.json(task)
 })
 
