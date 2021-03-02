@@ -1,0 +1,1 @@
+[{"id":1,"name":"ruan","login":"felipe@alu.ufc"},{"id":2,"name":"alan","login":"alan@alu.ufc"},{"id":3,"name":"isaac","login":"isaac@alu.ufc"},{"id":4,"name":"natan","login":"natan@alu.ufc"},{"id":5,"name":"asdf","login":"asdf@alu.ufc.br"},{"id":6,"name":"newuser","login":"newuser@alu.ufc.br"}]
